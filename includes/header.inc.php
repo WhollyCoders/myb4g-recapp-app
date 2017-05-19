@@ -1,8 +1,3 @@
-<?php
-require('./classes/Competitor.php');
-require('./classes/WeighIn.php');
-require('./classes/Team.php'); 
-?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -26,9 +21,9 @@ require('./classes/Team.php');
         <ul id="menu">
           <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
           <li <?php if($page_title == 'home'){echo('class="selected"');} ?>><a href="index.php">Home</a></li>
-          <li <?php if($page_title == 'examples'){echo('class="selected"');} ?>><a href="examples.php">Examples</a></li>
-          <li <?php if($page_title == 'page'){echo('class="selected"');} ?>><a href="page.php">A Page</a></li>
-          <li <?php if($page_title == 'another'){echo('class="selected"');} ?>><a href="another_page.php">Another Page</a></li>
+          <li <?php if($page_title == 'competitors'){echo('class="selected"');} ?>><a href="competitors.php">Competitors</a></li>
+          <li <?php if($page_title == 'teams'){echo('class="selected"');} ?>><a href="teams.php">Teams</a></li>
+          <li <?php if($page_title == 'weigh_ins'){echo('class="selected"');} ?>><a href="weighins.php">Weigh-Ins</a></li>
           <li <?php if($page_title == 'contact'){echo('class="selected"');} ?>><a href="contact.php">Contact Us</a></li>
         </ul>
       </div>
